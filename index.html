@@ -1,47 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Urban Reads - Discover the best books online.">
     <title>Urban Reads - Online Bookstore</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1>Urban Reads</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#books">Books</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <h1>Urban Reads</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#bestsellers">Bestsellers</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="home">
-      <h2>Welcome to Urban Reads</h2>
-      <p>
-        Your one-stop online bookstore for the best reads across all genres.
-      </p>
-      <input type="text" id="search" placeholder="Search for books..." />
+        <h2>Welcome to Urban Reads</h2>
+        <p>Your one-stop online bookstore for the best reads across all genres.</p>
+        <input type="text" id="search" placeholder="Search for books..." onkeyup="searchBooks()">
     </section>
 
     <section id="books">
-      <h2>Featured Books</h2>
-      <div class="book-list" id="book-list">
-        <!-- Books will be dynamically added here -->
-      </div>
+        <h2>Featured Books</h2>
+        <div class="book-list" id="book-list">
+            <div class="book" data-title="The Great Adventure">
+                <img src="images/book1.jpg" alt="The Great Adventure">
+                <h3>The Great Adventure</h3>
+                <p>by John Doe</p>
+            </div>
+            <div class="book" data-title="Science Uncovered">
+                <img src="images/book2.jpg" alt="Science Uncovered">
+                <h3>Science Uncovered</h3>
+                <p>by Jane Smith</p>
+            </div>
+            <div class="book" data-title="Mystery of the Night">
+                <img src="images/book3.jpg" alt="Mystery of the Night">
+                <h3>Mystery of the Night</h3>
+                <p>by Alex Johnson</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bestsellers">
+        <h2>Bestsellers</h2>
+        <div class="book-list">
+            <div class="book" data-title="The Power of Habit">
+                <img src="images/book4.jpg" alt="The Power of Habit">
+                <h3>The Power of Habit</h3>
+                <p>by Charles Duhigg</p>
+            </div>
+            <div class="book" data-title="Think and Grow Rich">
+                <img src="images/book5.jpg" alt="Think and Grow Rich">
+                <h3>Think and Grow Rich</h3>
+                <p>by Napoleon Hill</p>
+            </div>
+        </div>
     </section>
 
     <section id="reviews">
-      <h2>Customer Reviews</h2>
-      <p>See what our readers have to say about their favorite books.</p>
+        <h2>Customer Reviews</h2>
+        <p>See what our readers have to say about their favorite books.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Urban Reads is an online bookstore that provides curated selections of books for all ages and interests.</p>
+    </section>
+
+    <section id="blog">
+        <h2>Book Blog</h2>
+        <p>Stay updated with our latest book recommendations, reviews, and author interviews.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@urbanreads.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Address: 123 Book Street, Library City</p>
     </section>
 
     <footer>
-      <p>&copy; 2024 Urban Reads. All rights reserved.</p>
+        <p>&copy; 2024 Urban Reads. All rights reserved.</p>
     </footer>
-  </body>
+</body>
 </html>
